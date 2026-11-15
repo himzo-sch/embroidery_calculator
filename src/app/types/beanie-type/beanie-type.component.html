@@ -3,31 +3,31 @@
     <section class="col-12 col-lg-6 column left">
       <mat-form-field appearance="fill">
         <mat-label>Minta darabszám</mat-label>
-        <input matInput [formControl]="embroideryQuantity">
+        <input matInput [formControl]="embroideryQuantity" autocomplete="off">
         <span matTextSuffix>db</span>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Normál cérna</mat-label>
-        <input matInput [formControl]="stitches">
+        <input matInput [formControl]="stitches" autocomplete="off">
         <span matTextSuffix>öltés</span>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Sulky cérna</mat-label>
-        <input matInput [formControl]="stitchesSulky">
+        <input matInput [formControl]="stitchesSulky" autocomplete="off">
         <span matTextSuffix>öltés</span>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Arany cérna</mat-label>
-        <input matInput [formControl]="stitchesGold">
+        <input matInput [formControl]="stitchesGold" autocomplete="off">
         <span matTextSuffix>öltés</span>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Texlight cérna</mat-label>
-        <input matInput [formControl]="stitchesTex">
+        <input matInput [formControl]="stitchesTex" autocomplete="off">
         <span matTextSuffix>öltés</span>
       </mat-form-field>
     </section>
@@ -35,7 +35,7 @@
       <div class="output">
         <mat-form-field appearance="fill" style="width: 50%; padding-right: 2%;" floatLabel="always">
           <mat-label>Határidő</mat-label>
-          <input matInput [formControl]="dueDate">
+          <input matInput [formControl]="dueDate" autocomplete="off">
           <span matTextSuffix>Nap</span>
         </mat-form-field>
         <br>
@@ -55,7 +55,7 @@
       <div style="width: 50%; padding-right: 2%;"></div>
       <mat-form-field appearance="fill" style="width: 50%; padding-right: 2%;">
         <mat-label>Elnevezés</mat-label>
-        <input matInput [formControl]="name" maxlength="28">
+        <input matInput [formControl]="name" maxlength="28" autocomplete="off">
       </mat-form-field>
       <div class="submitButtons">
         <button type="submit" mat-raised-button class="btn" (click)="calculate()" style="margin-right: 1%;">Számol</button>

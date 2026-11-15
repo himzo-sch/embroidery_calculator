@@ -10,6 +10,7 @@ import {BasketItem} from "../models/basket-item";
 export class BasketComponent implements OnInit {
   basket: BasketItem[] = [];
   sumSumPrice: number = 0;
+  roundUpAmount = 1000; //we round UP to the closest multiple of this value
 
   constructor(protected basketService: BasketService) { }
 
@@ -32,5 +33,9 @@ export class BasketComponent implements OnInit {
     this.basket = this.basketService.getBasket();
     this.sumSumPrice = 0;
     this.basket.forEach(item => this.sumSumPrice += item.sumPrice);
+  }
+
+  roundUpSumSumPrice(price: number): number {
+    return Number(Math.ceil(price/1000)*1000);
   }
 }

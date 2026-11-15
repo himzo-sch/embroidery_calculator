@@ -3,38 +3,38 @@
         <section class="col-12 col-lg-6 column left">
             <mat-form-field appearance="fill">
                 <mat-label>Rendelés darabszám</mat-label>
-                <input matInput [formControl]="patchQuantity">
+                <input matInput [formControl]="patchQuantity" autocomplete="off">
                 <span matTextSuffix>db</span>
             </mat-form-field>
 
             <mat-form-field appearance="fill">
                 <mat-label>Normál cérna</mat-label>
-                <input matInput [formControl]="patchStitches">
+                <input matInput [formControl]="patchStitches" autocomplete="off">
                 <span matTextSuffix>öltés</span>
             </mat-form-field>
 
             <mat-form-field appearance="fill">
                 <mat-label>Sulky cérna</mat-label>
-                <input matInput [formControl]="patchStitchesSulky">
+                <input matInput [formControl]="patchStitchesSulky" autocomplete="off">
                 <span matTextSuffix>öltés</span>
             </mat-form-field>
 
             <mat-form-field appearance="fill">
                 <mat-label>Arany cérna</mat-label>
-                <input matInput [formControl]="patchStitchesGold">
+                <input matInput [formControl]="patchStitchesGold" autocomplete="off">
                 <span matTextSuffix>öltés</span>
             </mat-form-field>
 
             <mat-form-field appearance="fill">
                 <mat-label>Texlight cérna</mat-label>
-                <input matInput [formControl]="patchStitchesTex">
+                <input matInput [formControl]="patchStitchesTex" autocomplete="off">
                 <span matTextSuffix>öltés</span>
             </mat-form-field>
 
             <mat-slide-toggle [formControl]="enableIron"> <mat-label style="color: #FFFFFF99;">Felvasalható anyag</mat-label></mat-slide-toggle>
             <mat-form-field appearance="fill">
                 <mat-label>Átmérő</mat-label>
-                <input matInput [formControl]="ironDiameter">
+                <input matInput [formControl]="ironDiameter" autocomplete="off">
                 <span matTextSuffix>cm</span>
             <br>
         </mat-form-field>
@@ -44,7 +44,7 @@
             <div class="output">
                 <mat-form-field appearance="fill" style="width: 50%; padding-right: 2%;" floatLabel="always">
                     <mat-label>Határidő</mat-label>
-                    <input matInput [formControl]="dueDate">
+                    <input matInput [formControl]="dueDate" autocomplete="off">
                     <span matTextSuffix>Nap</span>
                 </mat-form-field>
                 <br>
@@ -64,7 +64,7 @@
             <div style="width: 50%; padding-right: 2%;"></div>
             <mat-form-field appearance="fill" style="width: 50%; padding-right: 2%;">
               <mat-label>Elnevezés</mat-label>
-              <input matInput [formControl]="name" maxlength="28">
+              <input matInput [formControl]="name" maxlength="28" autocomplete="off">
             </mat-form-field>
             <div class="submitButtons">
               <button type="submit" mat-raised-button class="btn" (click)="calculate()" style="margin-right: 1%;">Számol</button>

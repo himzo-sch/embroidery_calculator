@@ -34,7 +34,7 @@ export class PatchTypeComponent implements OnInit{
   pricePerPatch: number = 0;
 
 
-  async calculate() {
+  async calculate() {    
     if (this.patchQuantity.valid && this.patchStitches.valid && this.patchStitchesSulky.valid && this.patchStitchesGold.valid && this.patchStitchesTex.valid){
       let order: OrderDto = {
         category: this.category,

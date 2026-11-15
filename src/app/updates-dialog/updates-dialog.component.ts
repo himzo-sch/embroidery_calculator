@@ -2,13 +2,14 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 const UPDATES = [
+  {date: '2026-11-15', version: '3.2.42-BETA', content: 'Javítva a #21-es hibajegy, amiben oldal másoláskor csak látszólag viszi át az értékeket, de a formban nem léteznek, illetve a #8-as hibajegy is javításra került, a végösszeget ezresekre felkerekítjük'},
   {date: '2025-07-20', version: '3.2.41-BETA', content: 'Beállítások UI refaktorálása, frissítések manuális megnyitása gomb bevezetése. Readme deploy menetére.'},
   {date: '2025-07-14', version: '3.2.40-BETA', content: 'Legújabb frissítés kiemelése. Frissítési dátum megjelenítése.'},
   {date: '2025-07-14', version: '3.2.39-BETA', content: 'A darabár nettó érték helyet bruttó értéket mutat a számoló füleken. Apró megjelenési módosítások.'},
   {date: '2025-03-14', version: '3.2.38-BETA', content: 'Felvasalható anyag ár beleírása a számítási függvénybe.'},
   {date: '2024-12-30', version: '3.2.37-BETA', content: 'Felvasalható anyag megadás implementálása a folt lapon, számítási függvény módosítása. A SZÁMÍTÁSI BEÁLLÍTÁSOKBAN NYOMJ AZ ÁTÁLLÍT VAGY VISSZAÁLLÍT GOMBRA!'},
   {date: '2024-12-30', version: '3.2.36-BETA', content: 'Kosár összeg érték és kosár ürítés javítása.'},
-  {date: '2024-12-30', version: '3.2.35-BETA', content: 'Új frissítések dialógus hozzáadása. Itt láthatók milyen újítások kerültek be!'},
+  {date: '2024-12-30', version: '3.2.35-BETA', content: 'Új frissítések dialógus hozzáadása. Itt láthatók milyen újítások kerültek be!'}
 ]
 
 @Component({
